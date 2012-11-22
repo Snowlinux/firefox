@@ -30,8 +30,3 @@ cp pref/* opt/firefox/defaults/pref/
 
 rm -rf opt/robots.txt
 
-export DEBFULLNAME='Clement Lefebvre'
-export DEBEMAIL='root@linuxmint.com'
-dch -v "$RELEASE" -b
-
-dpkg-buildpackage -us -uc -rfakeroot

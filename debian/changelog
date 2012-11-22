@@ -1,3 +1,9 @@
+firefox (17.0) debian; urgency=low
+
+  * 17.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 22 Nov 2012 11:37:32 +0000
+
 firefox (14.0.1) debian; urgency=low
 
   * 14.0.1
