@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] ; then
+    update-alternatives --install /usr/bin/x-www-browser x-www-browser /opt/firefox/firefox 70
+    update-alternatives --remove mozilla /opt/firefox/firefox
+    update-alternatives --install /usr/bin/gnome-www-browser gnome-www-browser /opt/firefox/firefox 70
+fi
+
+# Automatically added by dh_installmenu
+if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
+	update-menus
+fi
+# End automatically added section
+# Automatically added by dh_installmime
+if [ "$1" = "configure" ] && [ -x "`which update-mime 2>/dev/null`" ]; then
+	update-mime
+fi
+# End automatically added section
+

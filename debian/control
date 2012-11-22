@@ -1,0 +1,13 @@
+Source: firefox
+Section: web
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: firefox
+Architecture: any
+Depends: firefox-l10n | firefox-l10n-en-us
+Description: The Firefox web browser
+ The Mozilla Firefox Web Browser.
+
