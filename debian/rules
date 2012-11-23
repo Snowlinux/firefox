@@ -9,7 +9,6 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-
 CFLAGS = -Wall -g
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
@@ -17,6 +16,8 @@ ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
 else
 	CFLAGS += -O2
 endif
+
+DEB_VERSION=$(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 
 configure: configure-stamp
 configure-stamp:
@@ -45,7 +46,7 @@ install: build
 
 	rm -rf $(CURDIR)/debian/firefox/*
 	mkdir -p $(CURDIR)/debian/firefox/opt
-	/bin/bash $(CURDIR)/update.sh $(DEB_HOST_ARCH) $(CURDIR)
+	/bin/bash $(CURDIR)/update.sh $(DEB_HOST_ARCH) $(CURDIR) $(DEB_VERSION)
 	cp -r $(CURDIR)/usr $(CURDIR)/debian/firefox/
 
 # Build architecture-independent files here.
