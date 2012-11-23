@@ -68,7 +68,7 @@ locales['uk'] = 'uk'
 locales['zh-CN'] = 'zh'
 
 for locale in locales:
-    if (locale == "en_US"):
+    if (locale == "en-US"):
         os.system("mkdir -p %s/debian/firefox/opt" % curdir)
         os.chdir("%s/debian/firefox/opt" % curdir)
     else:
