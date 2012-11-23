@@ -5,9 +5,12 @@ import os, sys, commands
 archi = sys.argv[1]
 curdir = sys.argv[2]
 release = sys.argv[3]
+abort = False 
 
 if "+" in release:
-    release = release.split("+")[0]
+    if "lmde" not in release:
+        abort = True
+    release = release.split("+")[0]    
 
 if archi == "amd64":
     archi="linux-x86_64"
@@ -75,24 +78,25 @@ for locale in locales:
         os.system("mkdir -p %s/debian/firefox-l10n-%s/opt" % (curdir, locales[locale]))
         os.chdir("%s/debian/firefox-l10n-%s/opt" % (curdir,locales[locale]))
 
-    os.system("wget http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release))
-    if (not os.path.exists("firefox-%s.tar.bz2" % release)):
-        print "FAILED: Could not download http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release)
-        sys.exit(1)
+    if not abort:        
+        os.system("wget http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release))
+        if (not os.path.exists("firefox-%s.tar.bz2" % release)):
+            print "FAILED: Could not download http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release)
+            sys.exit(1)
 
-    os.system("bzip2 -d firefox-%s.tar.bz2" % release)
-    os.system("tar xvf firefox-%s.tar" % release)
-    os.system("rm firefox-%s.tar" % release)
-            
-    if (locale == "en-US"):
-        os.system("rm firefox/omni.ja")
-        os.system("rm -rf firefox/searchplugins/*")
-        os.system("rm -rf firefox/defaults/pref/*")
-        os.system("cp %s/searchplugins/* firefox/searchplugins/" % curdir)
-        os.system("cp %s/pref/* firefox/defaults/pref/" % curdir)
-    else:        
-        os.system("mv firefox/omni.ja ./")
-        os.system("rm -rf firefox/*")
-        os.system("mv omni.ja firefox/")
+        os.system("bzip2 -d firefox-%s.tar.bz2" % release)
+        os.system("tar xvf firefox-%s.tar" % release)
+        os.system("rm firefox-%s.tar" % release)
+                
+        if (locale == "en-US"):
+            os.system("rm firefox/omni.ja")
+            os.system("rm -rf firefox/searchplugins/*")
+            os.system("rm -rf firefox/defaults/pref/*")
+            os.system("cp %s/searchplugins/* firefox/searchplugins/" % curdir)
+            os.system("cp %s/pref/* firefox/defaults/pref/" % curdir)
+        else:        
+            os.system("mv firefox/omni.ja ./")
+            os.system("rm -rf firefox/*")
+            os.system("mv omni.ja firefox/")
 
 os.chdir(curdir)
