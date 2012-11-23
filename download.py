@@ -6,6 +6,9 @@ archi = sys.argv[1]
 curdir = sys.argv[2]
 release = sys.argv[3]
 
+if "+" in release:
+    release = release.split("+")[0]
+
 if archi == "amd64":
     archi="linux-x86_64"
 else:
