@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: firefox
 Architecture: any
-Depends: firefox-l10n | firefox-l10n-en-us
+Depends: firefox-l10n (= ${source:Version}) | firefox-l10n-en-us (= ${source:Version})
 Description: The Firefox web browser
  The Mozilla Firefox Web Browser.
 
