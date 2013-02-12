@@ -1,3 +1,9 @@
+firefox (18.0.2~linuxmint1) debian; urgency=low
+
+  * 18.0.2
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 Feb 2013 12:31:43 +0000
+
 firefox (18.0.1~linuxmint1) debian; urgency=low
 
   * 18.0.1
