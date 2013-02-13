@@ -84,9 +84,9 @@ for locale in locales:
         os.chdir("%s/debian/firefox-l10n-%s/opt" % (curdir,locales[locale]))
 
     if not abort:        
-        os.system("wget http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release))
+        os.system("wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release))
         if (not os.path.exists("firefox-%s.tar.bz2" % release)):
-            print "FAILED: Could not download http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release)
+            print "FAILED: Could not download http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/%s/%s/firefox-%s.tar.bz2" % (archi, locale, release)
             sys.exit(1)
 
         os.system("bzip2 -d firefox-%s.tar.bz2" % release)
