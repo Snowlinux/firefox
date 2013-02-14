@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: firefox
 Architecture: any
-Depends: firefox-l10n-en-us (= ${source:Version}) | firefox-l10n (= ${source:Version})
+Depends: firefox-l10n-en-us | firefox-l10n
 Description: The Firefox web browser
  The Mozilla Firefox Web Browser.
 
@@ -16,7 +16,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: American language packs for Firefox
  American language packs for the Mozilla Firefox Web Browser.
 
@@ -25,7 +24,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: French language packs for Firefox
  French language packs for the Mozilla Firefox Web Browser.
 
@@ -34,7 +32,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Afrikaans language packs for Firefox
  Afrikaans language packs for the Mozilla Firefox Web Browser.
 
@@ -43,7 +40,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Arabic language packs for Firefox
  Arabic language packs for the Mozilla Firefox Web Browser.
 
@@ -52,7 +48,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Belarusian language packs for Firefox
  Belarusian language packs for the Mozilla Firefox Web Browser.
 
@@ -61,7 +56,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Bulgarian language packs for Firefox
  Bulgarian language packs for the Mozilla Firefox Web Browser.
 
@@ -70,7 +64,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Basque language packs for Firefox
  Basque language packs for the Mozilla Firefox Web Browser.
 
@@ -79,7 +72,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Bengali-Bengladesh language packs for Firefox
  Bengali-Bengladesh language packs for the Mozilla Firefox Web Browser.
 
@@ -88,7 +80,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Albanian language packs for Firefox
  Albanian language packs for the Mozilla Firefox Web Browser.
 
@@ -97,7 +88,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Catalan language packs for Firefox
  Catalan language packs for the Mozilla Firefox Web Browser.
 
@@ -106,7 +96,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Czech language packs for Firefox
  Czech language packs for the Mozilla Firefox Web Browser.
 
@@ -115,7 +104,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Danish language packs for Firefox
  Danish language packs for the Mozilla Firefox Web Browser.
 
@@ -124,7 +112,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: German language packs for Firefox
  German language packs for the Mozilla Firefox Web Browser.
 
@@ -133,7 +120,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Greek language packs for Firefox
  Greek language packs for the Mozilla Firefox Web Browser.
 
@@ -142,7 +128,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: British language packs for Firefox
  British language packs for the Mozilla Firefox Web Browser.
 
@@ -151,7 +136,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Esperanto language packs for Firefox
  Esperanto language packs for the Mozilla Firefox Web Browser.
 
@@ -160,7 +144,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Estonian language packs for Firefox
  Estonian language packs for the Mozilla Firefox Web Browser.
 
@@ -169,7 +152,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Finnish language packs for Firefox
  Finnish language packs for the Mozilla Firefox Web Browser.
 
@@ -178,7 +160,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Frysian language packs for Firefox
  Frysian language packs for the Mozilla Firefox Web Browser.
 
@@ -187,7 +168,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Galician language packs for Firefox
  Galician language packs for the Mozilla Firefox Web Browser.
 
@@ -196,7 +176,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Gujarati language packs for Firefox
  Gujarati language packs for the Mozilla Firefox Web Browser.
 
@@ -205,7 +184,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Hebrew language packs for Firefox
  Hebrew language packs for the Mozilla Firefox Web Browser.
 
@@ -214,7 +192,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Hindi language packs for Firefox
  Hindi language packs for the Mozilla Firefox Web Browser.
 
@@ -223,7 +200,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Croatian language packs for Firefox
  Croatian language packs for the Mozilla Firefox Web Browser.
 
@@ -232,7 +208,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Hungarian language packs for Firefox
  Hungarian language packs for the Mozilla Firefox Web Browser.
 
@@ -241,7 +216,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Indonesian language packs for Firefox
  Indonesian language packs for the Mozilla Firefox Web Browser.
 
@@ -250,7 +224,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Icelandic language packs for Firefox
  Icelandic language packs for the Mozilla Firefox Web Browser.
 
@@ -259,7 +232,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Italian language packs for Firefox
  Italian language packs for the Mozilla Firefox Web Browser.
 
@@ -268,7 +240,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Japanese language packs for Firefox
  Japanese language packs for the Mozilla Firefox Web Browser.
 
@@ -277,7 +248,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Kannada language packs for Firefox
  Kannada language packs for the Mozilla Firefox Web Browser.
 
@@ -286,7 +256,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Korean language packs for Firefox
  Korean language packs for the Mozilla Firefox Web Browser.
 
@@ -295,7 +264,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Lithuanian language packs for Firefox
  Lithuanian language packs for the Mozilla Firefox Web Browser.
 
@@ -304,7 +272,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Latvian language packs for Firefox
  Latvian language packs for the Mozilla Firefox Web Browser.
 
@@ -313,7 +280,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Dutch language packs for Firefox
  Dutch language packs for the Mozilla Firefox Web Browser.
 
@@ -322,7 +288,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Chinese language packs for Firefox
  Chinese language packs for the Mozilla Firefox Web Browser.
 
@@ -331,7 +296,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Spanish language packs for Firefox
  Spanish language packs for the Mozilla Firefox Web Browser.
 
@@ -340,7 +304,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Persian language packs for Firefox
  Persian language packs for the Mozilla Firefox Web Browser.
 
@@ -349,7 +312,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Bokmal language packs for Firefox
  Bokmal language packs for the Mozilla Firefox Web Browser.
 
@@ -358,7 +320,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Nynorsk language packs for Firefox
  Nynorsk language packs for the Mozilla Firefox Web Browser.
 
@@ -367,7 +328,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Polish language packs for Firefox
  Polish language packs for the Mozilla Firefox Web Browser.
 
@@ -376,7 +336,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Portuguese Brazilian language packs for Firefox
  Portuguese Brazilian language packs for the Mozilla Firefox Web Browser.
 
@@ -385,7 +344,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Portuguese language packs for Firefox
  Portuguese language packs for the Mozilla Firefox Web Browser.
 
@@ -394,7 +352,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Romanian language packs for Firefox
  Romanian language packs for the Mozilla Firefox Web Browser.
 
@@ -403,7 +360,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Russian language packs for Firefox
  Russian language packs for the Mozilla Firefox Web Browser.
 
@@ -412,7 +368,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Slovak language packs for Firefox
  Slovak language packs for the Mozilla Firefox Web Browser.
 
@@ -421,7 +376,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Slovenian language packs for Firefox
  Slovenian language packs for the Mozilla Firefox Web Browser.
 
@@ -430,7 +384,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Serbian language packs for Firefox
  Serbian language packs for the Mozilla Firefox Web Browser.
 
@@ -439,7 +392,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Swedish language packs for Firefox
  Swedish language packs for the Mozilla Firefox Web Browser.
 
@@ -448,7 +400,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Thai language packs for Firefox
  Thai language packs for the Mozilla Firefox Web Browser.
 
@@ -457,7 +408,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Turkish language packs for Firefox
  Turkish language packs for the Mozilla Firefox Web Browser.
 
@@ -466,7 +416,6 @@ Architecture: any
 Provides: firefox-l10n
 Replaces: firefox-l10n
 Conflicts: firefox-l10n
-Depends : firefox (= ${source:Version})
 Description: Ukrainian language packs for Firefox
  Ukrainian language packs for the Mozilla Firefox Web Browser.
 
