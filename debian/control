@@ -8,6 +8,7 @@ Standards-Version: 3.7.2
 Package: firefox
 Architecture: any
 Depends: firefox-l10n-en-us | firefox-l10n
+Replaces: firefox-l10n-en-us, firefox-l10n-fr, firefox-l10n-af, firefox-l10n-ar, firefox-l10n-be, firefox-l10n-bg, firefox-l10n-eu, firefox-l10n-bn-bd, firefox-l10n-sq, firefox-l10n-ca, firefox-l10n-cs, firefox-l10n-da, firefox-l10n-de, firefox-l10n-el, firefox-l10n-en-gb, firefox-l10n-eo, firefox-l10n-et, firefox-l10n-fi, firefox-l10n-fy, firefox-l10n-gl, firefox-l10n-gu, firefox-l10n-he, firefox-l10n-hi, firefox-l10n-hr, firefox-l10n-hu, firefox-l10n-id, firefox-l10n-is, firefox-l10n-it, firefox-l10n-ja, firefox-l10n-kn, firefox-l10n-ko, firefox-l10n-lt, firefox-l10n-lv, firefox-l10n-nl, firefox-l10n-zh, firefox-l10n-es, firefox-l10n-fa, firefox-l10n-nb, firefox-l10n-nn, firefox-l10n-pl, firefox-l10n-pt-br, firefox-l10n-pt, firefox-l10n-ro, firefox-l10n-ru, firefox-l10n-sk, firefox-l10n-sl, firefox-l10n-sr, firefox-l10n-sv, firefox-l10n-th, firefox-l10n-tr, firefox-l10n-uk
 Description: The Firefox web browser
  The Mozilla Firefox Web Browser.
 
