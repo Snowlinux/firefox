@@ -22,6 +22,7 @@ else:
     archi="linux-i686"
 
 locales = {}
+locales['en-US'] = 'en-us'
 locales['af'] = 'af'
 locales['ar'] = 'ar'
 locales['be'] = 'be'
@@ -33,7 +34,6 @@ locales['da'] = 'da'
 locales['de'] = 'de'
 locales['el'] = 'el'
 locales['en-GB'] = 'en-gb'
-locales['en-US'] = 'en-us'
 locales['eo'] = 'eo'
 locales['es-ES'] = 'es'
 locales['et'] = 'et'
@@ -76,6 +76,7 @@ locales['zh-CN'] = 'zh'
 
 for locale in locales:
     if (locale == "en-US"):
+        os.system("mkdir -p %s/debian/firefox-l10n-%s/opt/firefox/browser" % (curdir, locales[locale])) 
         os.system("mkdir -p %s/debian/firefox/opt" % curdir)
         os.system("mkdir -p %s/debian/firefox-l10n-%s/opt/firefox" % (curdir, locales[locale]))
         os.chdir("%s/debian/firefox/opt" % curdir)
