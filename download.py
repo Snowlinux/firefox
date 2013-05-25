@@ -9,7 +9,7 @@ abort = False
 
 release = version
 if "+" in version:
-    if "lmde" not in version:
+    if "snowlinux" not in version:
         abort = True
     release = version.split("+")[0]   
     
